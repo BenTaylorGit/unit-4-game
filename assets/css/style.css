@@ -1,0 +1,18 @@
+h1 {
+	font-family: 'Roboto', sans-serif;
+}
+
+.container{
+	margin: auto;
+	width: 100%;
+}
+.crystal-image {
+	width: 200px;
+	height: 200px;
+	 
+  }
+.imageHolder {
+	
+	margin: 15px; 
+	
+}
