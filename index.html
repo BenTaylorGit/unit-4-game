@@ -1,71 +1,79 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <title>simple crystal game</title>
+  <head>
+    <title>Crystal Collector</title>
 
-  <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+  </head>
 
+  <body>
+    <!-- Bootstrap container -->
+    <div class="container">
 
-
-
-</head>
-
-<body>
-
-  
-
-  <!-- Note that this div is now empty. We will fill it dynamically -->
-
-  <div class="container">
+      <!-- Bootstrap row -->
       <div class="row">
-          <div class="col-md-5 imageHolder">
-      <h1>Number to Guess: <span id="number-to-guess"></span></h1>
-          </div>
-      <div class="col-md-5 imageHolder">
-      <h1>Your Number: <span id="your-number"></span></h1>
-    </div>
-      <div class="col-md-5 imageHolder">
-      <h1>Wins: <span id="wins"></span></h1>
-    </div>
-      <div class="col-md-5 imageHolder">
-      <h1>Losses: <span id="losses"></span></h1>
-    </div>
+        <div class="col-md-12">
+          <h1><strong>Crystal Collector</strong></h1>
+        </div>
       </div>
-    <!-- Content here -->
-    <div class="row">
-      <div class="col-md-2 imageHolder">
-        <img
-          src="http://cdn.playbuzz.com/cdn/35910209-2844-45c0-b099-f4d82878d54f/00261fda-4062-4096-81fd-8cf96b9034e8.jpg"
-          id="crystal-one" class="crystal-image">
-      </div>
-      <div class="col-md-2 imageHolder">
-        <img
-          src="http://cdn.playbuzz.com/cdn/35910209-2844-45c0-b099-f4d82878d54f/00261fda-4062-4096-81fd-8cf96b9034e8.jpg"
-          id="crystal-two" class="crystal-image">
-      </div>
-      <div class="col-md-2 imageHolder">
-        <img
-          src="http://cdn.playbuzz.com/cdn/35910209-2844-45c0-b099-f4d82878d54f/00261fda-4062-4096-81fd-8cf96b9034e8.jpg"
-          id="crystal-three" class="crystal-image">
-      </div>
-      <div class="col-md-2 imageHolder">
-        <img
-          src="http://cdn.playbuzz.com/cdn/35910209-2844-45c0-b099-f4d82878d54f/00261fda-4062-4096-81fd-8cf96b9034e8.jpg"
-          id="crystal-four" class="crystal-image">
-      </div>
-    </div>
-  </div>
 
-  <!-- JAVASCRIPT  -->
-  <!-- ========================================= -->
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <!-- bootstrap row that holds two columns with number to guess and the players number -->
+      <div class="row">
 
-  <script type="text/javascript" src="./assets/javascript/game.js"></script>
-</body>
+        <div class="col-md-6 imageHolder">
+          <h4>Number to Guess: <strong><span id="number-to-guess"></span></strong></h4>
+        </div>
+
+        <div class="col-md-6 imageHolder">
+          <h4>Your Number: <strong><span id="your-number"></span></strong></h4>
+        </div>
+
+      </div>
+
+      <!-- bootstrap row that holds four columns with each of the crystal images -->
+      <div class="row">
+
+        <div class="col-md-3 imageHolder">
+          <img src="./assets/images/blueCrystal.png" id="crystal-one" class="crystal-image">
+        </div>
+
+        <div class="col-md-3 imageHolder">
+          <img src="./assets/images/greenCrystal.png" id="crystal-two" class="crystal-image">
+        </div>
+
+        <div class="col-md-3 imageHolder">
+          <img src="./assets/images/pinkCrystal.png" id="crystal-three" class="crystal-image">
+        </div>
+
+        <div class="col-md-3 imageHolder">
+          <img src="./assets/images/yellowCrystal.png" id="crystal-four" class="crystal-image">
+        </div>
+
+      </div>
+
+      <!-- bootstrap row that holds two columns with player wins and losses -->
+      <div class="row">
+
+        <div class="col-md-6 imageHolder">
+          <h4>Wins: <strong><span id="wins"></span></strong></h4>
+        </div>
+
+        <div class="col-md-6 imageHolder">
+          <h4>Losses: <strong><span id="losses"></span></strong></h4>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- JLink to External JS file and Jquery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./assets/javascript/game.js"></script>
+  </body>
 
 </html>
